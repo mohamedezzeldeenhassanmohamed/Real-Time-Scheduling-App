@@ -1,8 +1,6 @@
 # Real-Time-Scheduling-App
 
-Real-time operating systems (RTOS) 
-
-are designed to handle tasks that require precise timing and high reliability. Here are some common scheduling algorithms used in RTOS:
+Real-time operating systems (RTOS) are designed to handle tasks that require precise timing and high reliability. Here are some common scheduling algorithms used in RTOS:
 
 1. **Rate Monotonic Scheduling (RMS)**: This is a fixed-priority algorithm where tasks are assigned priorities based on their periodicity. The shorter the period, the higher the priority.
 
@@ -20,6 +18,7 @@ These algorithms help ensure that critical tasks meet their deadlines, which is 
 : [University of Connecticut](https://cps.cse.uconn.edu/wp-content/uploads/sites/2687/2019/10/ch6.2.pdf)
 : [Dextutor](https://dextutor.com/real-time-scheduling-algorithms/)
 
+- **APP** 
 
 - **Android** 
 
