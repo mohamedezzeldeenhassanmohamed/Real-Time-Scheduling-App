@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F3DC98"
+    android:layout_margin="2dp"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/tv_numTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task 1"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tv_arrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrival Time : 20"
+        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:id="@+id/tv_executionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Execution Time: 10"
+        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:id="@+id/tv_startingDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starting Deadline : 20"
+        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_gravity="left"/>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/algorithmsFragment">
+    <fragment
+        android:id="@+id/algorithmsFragment"
+        android:name="com.mohamedrafat.real_timeschedulingapp.ui.AlgorithmsFragment"
+        android:label="fragment_algorithms"
+        tools:layout="@layout/fragment_algorithms" >
+        <action
+            android:id="@+id/action_algorithmsFragment_to_staticTableInputsFragment"
+            app:destination="@id/staticTableInputsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/staticTableInputsFragment"
+        android:name="com.mohamedrafat.real_timeschedulingapp.ui.StaticTableInputsFragment"
+        android:label="fragment_static_table_inputs"
+        tools:layout="@layout/fragment_static_table_inputs" >
+        <action
+            android:id="@+id/action_staticTableInputsFragment_to_showOutputStaticTableFragment"
+            app:destination="@id/showOutputStaticTableFragment" />
+        <argument
+            android:name="algorithmName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_staticTableInputsFragment_to_showOutputStaticPriorityFragment"
+            app:destination="@id/showOutputStaticPriorityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showOutputStaticTableFragment"
+        android:name="com.mohamedrafat.real_timeschedulingapp.ui.ShowOutputStaticTableFragment"
+        android:label="fragment_show_output_static_table"
+        tools:layout="@layout/fragment_show_output_static_table" >
+        <argument
+            android:name="eDeadline"
+            app:argType="string" />
+        <argument android:name="eDeadlineUnforced" />
+        <argument
+            android:name="fcfs"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/showOutputStaticPriorityFragment"
+        android:name="com.mohamedrafat.real_timeschedulingapp.ShowOutputStaticPriorityFragment"
+        android:label="fragment_show_output_static_priority"
+        tools:layout="@layout/fragment_show_output_static_priority" >
+        <argument
+            android:name="resultEquation"
+            app:argType="string" />
+        <argument
+            android:name="outputTasks"
+            app:argType="string" />
+    </fragment>
+</navigation>
